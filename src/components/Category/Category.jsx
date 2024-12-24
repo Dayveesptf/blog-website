@@ -9,7 +9,7 @@ const Category = ({onSelectCategory, activeCategory}) => {
         {
             categories.map((category) => {
                 return (
-                    <button onClick={() => onSelectCategory(category)} className={`mr-2 space-x-16 ml-4 ${activeCategory === category ? "active-button" : ""}`} key={category}> {category} </button>
+                    <button onClick={() => onSelectCategory(category)} className={`mr-2 space-x-16 ml-3${activeCategory === category ? "active-button" : ""}`} key={category}> {category} </button>
                 );
             })
         }

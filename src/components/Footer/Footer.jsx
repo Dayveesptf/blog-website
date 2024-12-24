@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -69,16 +70,16 @@ const Footer = () => {
               <p className='font-medium tracking-wide text-purple-300'>Pages</p>
               <ul className='mt-2 space-y-2'>
                 <li>
-                  <a href="/" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>Home</a>
+                  <Link to="/" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>Home</Link>
                 </li>
                 <li>
-                  <a href="/blogs" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>Blogs</a>
+                  <Link to="/blogs" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>Blogs</Link>
                 </li>
                 <li>
-                  <a href="/services" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>Services</a>
+                  <Link to="/services" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>Services</Link>
                 </li>
                 <li>
-                  <a href="/about" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>About</a>
+                  <Link to="/about" className='text-gray-500 transition-colors duration-300 hover:text-purple-500'>About</Link>
                 </li>
               </ul>
               </div>
